@@ -1,12 +1,11 @@
 import streamlit as st
 
 def app():
-    st.title("Selamat Datang di Aplikasi Klasifikasi Penyakit Anemia")
-    
-    st.markdown("""
-    ### Deskripsi Aplikasi
-    Aplikasi ini bertujuan untuk membantu dalam klasifikasi penyakit anemia menggunakan machine learning.
+    # Title for the Home Page
+    st.title('Aplikasi Klasifikasi Penyakit Anemia')
 
-    ### Navigasi
-    Gunakan menu di sebelah kiri untuk berpindah ke halaman prediksi.
+    # Description and instructions
+    st.write("""
+    Aplikasi ini digunakan untuk memprediksi apakah seseorang terkena anemia berdasarkan data hasil tes darah lengkap (CBC).
+    Silakan pilih halaman **Prediction** untuk memulai prediksi.
     """)
