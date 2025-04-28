@@ -92,3 +92,4 @@ def app(data, x_resampled, y_resampled):
             st.error(f"Terjadi kesalahan dalam proses prediksi: {e}")
         except Exception as e:
             st.error(f"Terjadi kesalahan yang tidak terduga: {e}")
+
