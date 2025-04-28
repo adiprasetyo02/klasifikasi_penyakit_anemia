@@ -8,7 +8,8 @@ import streamlit as st
 @st.cache_data
 def load_data():
     # Load CSV data
-    data = pd.read_csv('diagnosed_cbc_data_v4.csv')
+    url = 'https://raw.githubusercontent.com/adiprasetyo02/klasifikasi_penyakit_anemia/refs/heads/main/diagnosed_cbc_data_v4.csv'
+    data = pd.read_csv(url)
     x = data[['WBC', 'LYMp', 'NEUTp', 'LYMn', 'NEUTn', 'RBC', 'HGB', 'HCT', 
               'MCV', 'MCH', 'MCHC', 'PLT', 'PDW', 'PCT']]  # Features
     y = data['Diagnosis']  # Target column (Diagnosis)
