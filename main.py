@@ -14,12 +14,12 @@ page = st.sidebar.radio("Pilih Halaman", list(Tabs.keys()))
 # Load dataset (only once)
 data, x_resampled, y_resampled = load_data()
 
-# Run the selected page
 def app(data, x_resampled, y_resampled):
     if page == "Prediction":
-        Tabs[page].app(data, x_resampled, y_resampled)
+        Tabs[page](data, x_resampled, y_resampled)
     else:
-       Tabs[page].app()
+        Tabs[page]()  # Untuk halaman Home
+
 
 # Run the app
 app(data, x_resampled, y_resampled)
