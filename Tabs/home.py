@@ -1,6 +1,7 @@
 import streamlit as st
 
-def app():
+def app(data, x_resampled, y_resampled):
+
     # Title for the Home Page
     st.title('Aplikasi Klasifikasi Penyakit Anemia')
 
