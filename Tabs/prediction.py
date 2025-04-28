@@ -1,7 +1,7 @@
 import streamlit as st
-from web_functionsio import train_model, predict
+from web_functions import train_model, predict
 
-def apps(data, x_resampled, y_resampled):
+def app(data, x_resampled, y_resampled):
     st.title("Halaman Prediksi Penyakit Anemia")
 
     # input untuk setiap fitur CBC menggunakan number_input
