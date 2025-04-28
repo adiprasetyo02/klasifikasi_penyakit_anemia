@@ -19,7 +19,7 @@ def app(data, x_resampled, y_resampled):
     if page == "Prediction":
         Tabs[page].app(data, x_resampled, y_resampled)
     else:
-        Tabs[page].app(data, x_resampled, y_resampled))
+       Tabs[page].app()
 
 # Run the app
-Tabs[page].app(data, x_resampled, y_resampled)
+app(data, x_resampled, y_resampled)
